@@ -23,8 +23,13 @@ Juno is a crucial component of the Internet Computer ecosystem, serving as a bri
  - ### https://tailwindcss.com/docs/
 
 
-## screen Shot
- ![image](https://github.com/jaisuriya97/TodoUsingJuno/assets/80122325/72f445b7-eed6-4d43-845f-91755f4d808e)
+## Screen Shot
+   ### Main Page
+ > ![image](https://github.com/jaisuriya97/TodoUsingJuno/assets/80122325/72f445b7-eed6-4d43-845f-91755f4d808e)
+  ### Authentication 
+ > ![image](https://github.com/jaisuriya97/TodoUsingJuno/assets/80122325/211412c4-205a-419c-8b50-923b7730a5d4)
+  ### Juno Database
+ > ![image](https://github.com/jaisuriya97/TodoUsingJuno/assets/80122325/ada964be-ef4c-4cf8-866d-efb78bad1d09)
 
 
 
