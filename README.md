@@ -14,7 +14,7 @@ Juno is a crucial component of the Internet Computer ecosystem, serving as a bri
 ## Application Link
 
 ***
- https://5rhf7-eqaaa-aaaal-aczua-cai.icp0.io/ 
+  ### https://5rhf7-eqaaa-aaaal-aczua-cai.icp0.io/ 
 ***
 
 ## Reference
