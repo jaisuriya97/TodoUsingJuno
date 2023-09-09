@@ -1,7 +1,7 @@
 # Read me⚠ 
 ## Greetings 💐
 
-# Simple Todo Using JUNO
+# Simple Todo Using Juno
 Juno is a crucial component of the Internet Computer ecosystem, serving as a bridge to connect the Internet Computer blockchain with other blockchains and cryptocurrencies. It enables interoperability by utilizing the Inter-Blockchain Communication (IBC) protocol, allowing assets and tokens to flow seamlessly between different blockchain networks, fostering cross-chain DeFi applications and broader blockchain interactions. Juno also introduces its native cryptocurrency, JUNO, which has various use cases, including staking for network security, governance participation, and facilitating network activities. This bridge network plays a pivotal role in expanding the capabilities of the Internet Computer and enhancing its integration with the wider blockchain ecosystem.
 
 ## Features
