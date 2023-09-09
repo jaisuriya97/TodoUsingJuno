@@ -1,4 +1,4 @@
-# React + Tailwind
+# React + Tailwind + JUNO
 
 A sample app with React and Tailwind Javascript that showcases authentication, datastore and storage usage.
 
