@@ -11,7 +11,6 @@ export const Auth = ({ children }) => {
   useEffect(() => {
     // TODO: STEP_4_AUTH_SUBSCRIBE
     const sub = authSubscribe((user) => setUser(user));
-
     return () => sub();
   }, []);
 
@@ -20,7 +19,6 @@ export const Auth = ({ children }) => {
       {user !== undefined && user !== null ? (
         <div>
           {children}
-
           <Logout />
         </div>
       ) : (

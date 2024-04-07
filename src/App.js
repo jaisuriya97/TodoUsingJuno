@@ -4,13 +4,17 @@ import { Modal } from "./Modal";
 import { initJuno } from "@junobuild/core";
 import { Auth } from "./Auth";
 import { useEffect } from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ViewTender from "./components/ViewTender";
+import MakeTender from "./components/MakeTender";
 function App() {
   // TODO: STEP_1_INITIALIZATION
   useEffect(() => {
     (async () =>
       await initJuno({
-        satelliteId: "5rhf7-eqaaa-aaaal-aczua-cai",
+        satelliteId: "te2pl-pqaaa-aaaal-ai5wq-cai",
       }))();
   }, []);
 
@@ -18,25 +22,55 @@ function App() {
     <>
       <div className="isolate bg-white">
         <main>
-          <div className="relative px-6 lg:px-8">
+          {/* <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-2xl pt-16">
               <div className="text-center">
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Todo
-                </h1>
                 <Auth>
                 <Modal />
                   <Table />
-                 
                 </Auth>
               </div>
             </div>
             <Background />
-          </div>
-        </main>
+          </div> */}
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<MainPage/>}>
+                </Route>
+                <Route path="/makeTender" element={<MakeTenderPage/>}/>
+                <Route path="/buyTender" element={<ViewTenderPage/>}/>
+              </Routes>
+            </BrowserRouter>
+          </main>
       </div>
     </>
   );
+}
+
+function MainPage(){
+  return(<>
+  <Navbar/>
+  <Hero/>
+  </>)
+}
+
+function MakeTenderPage(){
+  return(
+    <>
+    <Navbar/>
+    <MakeTender/>
+    </>
+  )
+}
+
+
+function ViewTenderPage(){
+  return(
+    <>
+    <Navbar/>
+    <ViewTender/>
+    </>
+  )
 }
 
 export default App;

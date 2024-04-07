@@ -10,6 +10,14 @@ export const Modal = () => {
   const [progress, setProgress] = useState(false);
   const [file, setFile] = useState();
 
+  const [TenderName, setTenderName] = useState("");
+  const [PublisherName, setPublisherName] = useState("");
+  const [TenderAmount, setTenderAmount] = useState("");
+  const [TenderDescription, setTenderDescription] = useState("");
+  const [TenderClosingDate, setTenderClosingDate] = useState("");
+  const [TenderOpeningDate, setTenderOpeningDate] = useState("");
+
+
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
@@ -46,11 +54,16 @@ export const Modal = () => {
       const key = nanoid();
 
       await setDoc({
-        collection: "notes",
+        collection: "Tenders",
         doc: {
           key,
           data: {
-            text: inputText,
+            text: TenderName,
+            text: PublisherName,
+            text: TenderAmount,
+            text: TenderDescription,
+            text: TenderClosingDate,
+            text: TenderOpeningDate,
             complete: false,
           },
         },
@@ -71,8 +84,8 @@ export const Modal = () => {
   };
 
   return (
-    <>
-      <input
+   {/* <>
+       <input
         type="text"
         name=""
         className="
@@ -122,7 +135,7 @@ export const Modal = () => {
         ) : (
           <span className="material-symbols-outlined w-20">add</span>
         )}
-      </button>
-    </>
+      </button> 
+    </>*/}
   );
 };
